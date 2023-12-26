@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var testClass = new BinarySearchTreeTests();
+            testClass.ShouldInsertAndRetrieveElementsCorrectly();
+            testClass.ShouldUpdateValueIfKeyAlreadyExistsDuringInsertion();
+            testClass.ShouldReturnNullForNonExistingKeys();
+            testClass.ShouldRemoveElementsCorrectly();
+            testClass.ShouldHandleTreeTraversalCorrectly();
         }
     }
 }
